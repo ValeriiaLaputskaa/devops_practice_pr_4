@@ -1,0 +1,10 @@
+[Unit]
+Description=My Test Service
+
+[Service]
+ExecStart=/home/valla/devops_practice/logger.sh
+WorkingDirectory=/home/valla/devops_practice
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
